@@ -67,14 +67,14 @@ and overwrite the class styles since an id's specificity weight is higher than a
 We select classes by writting a period in front of the class name i.e .container
 
     21. How do we select a p element with a single class of “human””?
-You could just write .human {} or .human p {}
+By using the class selector of .human 
 
     22. What is a parent child selector? When would this be useful? 
-The parent > child selector selects all elements that are a direct child of the specified element. 
-This would be useful when you want to give the styles of the parent element to only one specific child element.
+The parent > child selector selects elements that are a direct child of the specified element. 
+This would be useful when you want to give the styles of the parent element to that specific child element.
 
     23. How do you select all links within a div with the class of sidebar?
-div.sidebar a {}
+.sidebar a {}
 
     24. What is a pseudo selector?
 It's a keyword added to an element selector that specifies a special state for the element such as :hover
@@ -89,9 +89,8 @@ We use letter-spacing:
 We use text-transform:
 
     28. How do I add a 1px border around my div that is dotted and black?
-div {
      border: 1px dotted black;
-}
+
     29. How do I select everything on the page? 
 We use the universal selector *
 
@@ -105,7 +104,7 @@ You can read the name of the current directory on the terminal. (Yellow text on 
 ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
 git rm file-name
-Because it doesn't give you a "Are you sure" prompt and the deleted files can't be recovered.
+Because it doesn't give you a "Are you sure you want to delete?" prompt and the deleted files can't be recovered.
 
     34. Why should I use version control? 
 It is very useful in the event that something goes wrong with your project and you need to revert back to an older verison. You can see all of the changes made
@@ -143,5 +142,5 @@ We can use display: inline-block
     5. In your own words, explain the box model. What is the fix for the box model?
 The box model is the set of rules that decides the size of an element as you add padding, borders, and margins around the content.
 The problem with the box model is that it can cause elements to be tightly spaced and possibly overlap due to forcing the padding, border, and margin onto your content.
-You can fix this by using box-sizing: border-box or by using flex box.
+You can fix this by using box-sizing: border-box.
 
